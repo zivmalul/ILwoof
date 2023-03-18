@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tips"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="81dp"
+        android:layout_height="73dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="254dp"
+        tools:ignore="MissingConstraints" />
+
+    <VideoView
+        android:id="@+id/videoView3"
+        android:layout_width="81dp"
+        android:layout_height="73dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="346dp"
+        tools:ignore="MissingConstraints" />
+
+    <VideoView
+        android:id="@+id/videoView4"
+        android:layout_width="81dp"
+        android:layout_height="73dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="439dp"
+        tools:ignore="MissingConstraints" />
+
+    <VideoView
+        android:id="@+id/videoView8"
+        android:layout_width="81dp"
+        android:layout_height="73dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="533dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily bases games"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="276dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Challenges"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="374dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food tips"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="470dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vet inputs"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="561dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips &amp; Games"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="167dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="85dp"
+        android:layout_height="73dp"
+        android:src="@drawable/ilwoof_logo"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="27dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
