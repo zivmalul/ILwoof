@@ -7,11 +7,16 @@
     tools:context=".ui.notifications.NotificationsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.notifications.NotificationsFragment"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="42dp">
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".ui.notifications.NotificationsFragment">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/nav_view"
@@ -19,108 +24,152 @@
             android:layout_height="wrap_content"
             android:background="?android:attr/windowBackground"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/bottom_nav_menu" />
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="85dp"
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="81dp"
             android:layout_height="73dp"
-            android:src="@drawable/ilwoof_logo"
-            tools:layout_editor_absoluteX="19dp"
-            tools:layout_editor_absoluteY="27dp"
-            tools:ignore="DuplicateIds,MissingConstraints" />
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/videoView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginBottom="104dp"
             android:text="4th training- Stay in touch"
-            tools:layout_editor_absoluteX="137dp"
-            tools:layout_editor_absoluteY="553dp"
+            app:layout_constraintBottom_toTopOf="@+id/nav_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/videoView7"
             tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2nd training- Keep it simple "
-            tools:layout_editor_absoluteX="136dp"
-            tools:layout_editor_absoluteY="372dp"
-            tools:ignore="DuplicateIds,MissingConstraints" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp"
             android:text="3rd training- Challenge them"
-            tools:layout_editor_absoluteX="137dp"
-            tools:layout_editor_absoluteY="465dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/videoView6"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:layout_marginBottom="76dp"
             android:text="1st training- Let’s get started "
-            tools:layout_editor_absoluteX="137dp"
-            tools:layout_editor_absoluteY="276dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/videoView5"
             tools:ignore="DuplicateIds,MissingConstraints" />
-
-        <VideoView
-            android:id="@+id/videoView"
-            android:layout_width="81dp"
-            android:layout_height="73dp"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="254dp"
-            tools:ignore="MissingConstraints" />
 
         <VideoView
             android:id="@+id/videoView5"
             android:layout_width="81dp"
             android:layout_height="73dp"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="347dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/videoView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
 
         <VideoView
             android:id="@+id/videoView6"
-            android:layout_width="81dp"
+            android:layout_width="82dp"
             android:layout_height="73dp"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="435dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toTopOf="@+id/videoView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
 
         <VideoView
             android:id="@+id/videoView7"
-            android:layout_width="81dp"
-            android:layout_height="73dp"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="525dp"
+            android:layout_width="83dp"
+            android:layout_height="74dp"
+            android:layout_marginBottom="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.134"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="68dp"
+            android:text="2nd training- Keep it simple "
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toEndOf="@+id/videoView"
+            tools:ignore="DuplicateIds,MissingConstraints" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:text="Videos"
             android:textColor="#009688"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="174dp"
-            tools:layout_editor_absoluteY="169dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nav_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.107"
             tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="85dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/ilwoof_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left"
+            app:constraint_referenced_ids="constraintLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="85dp"
-        android:layout_height="73dp"
-        android:src="@drawable/ilwoof_logo"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="27dp"
-        tools:ignore="MissingConstraints" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="411dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="411dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,69 +8,82 @@
 
     <TextView
         android:id="@+id/text_home"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="11dp"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="83dp"
         android:text="Welcome"
         android:textColor="#009688"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="269dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_home"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="162dp"
         android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
         app:rippleColor="#FBFDFD"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="536dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="208dp"
+        android:layout_height="0dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="343dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="211dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="65dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Email"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="414dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="129dp"
-        android:layout_height="119dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="15dp"
         android:src="@drawable/ilwoof_logo"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
