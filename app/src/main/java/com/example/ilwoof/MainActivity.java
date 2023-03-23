@@ -1,6 +1,9 @@
 package com.example.ilwoof;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -35,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
         final NavController navController = navHostFragment.getNavController();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        Button btn = findViewById(R.id.button);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast button_clicked = Toast.makeText(getApplicationContext(), "Button Clicked",Toast.LENGTH_LONG);
+                button_clicked.show();
+            }
+        });
+
     }
 
 }
